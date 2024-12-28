@@ -1,11 +1,13 @@
 # dlink
 Implementation of Knuth's dancing links algorithm
-Code is in dlink.cpp and is standalone. Compile eg. with:
+Code is in `dlink.cpp` and is standalone. Compile eg. with:
 
+```
 g++ -Wall -O3 dlink.cpp -o dlink
+```
 
-Run with input on stdin of the options for the exact cover problem,
-see eg. iq.txt or test.txt for examples:
+Run with input on `stdin` of the options for the exact cover problem,
+see eg. `iq.txt` or `test.txt` for examples:
 
 ```
 1000000000000000000000000000000010000000000100000000001100000000001
@@ -14,7 +16,7 @@ see eg. iq.txt or test.txt for examples:
 ...
 ```
 
-Output is written to stdout, one line per solution eg:
+Output is written to `stdout`, one line per solution eg:
 
 ```
 123456789abcaaa662221114a66822113344998888337c449b555537cc99bbb5777
@@ -38,7 +40,7 @@ c449b555537
 cc99bbb5777
 ```
 
-Note that the iq.txt file only contains options for a single orientation
+Note that the `iq.txt` file only contains options for a single orientation
 of the "blue" piece:
 
 ```
@@ -47,5 +49,5 @@ x
 xxx
 ```
 
-which ensures that we only generate one solution for each reflected or
+which ensures that we only generate one solution for each family of reflected or
 rotated solution.
